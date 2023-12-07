@@ -9,6 +9,8 @@ public class BancoService {
 
     private ContaBancaria[] contas = new ContaBancaria[1000];
 
+    private ContaBancaria conta;
+
     private Random random = new Random();
 
     private int tamanho = 0;
@@ -23,8 +25,17 @@ public class BancoService {
         tamanho ++;
 
     }
-//    criar conta no banco;
 
-//    operar com uma conta no banco
+    public void depositar(ContaBancaria conta, double valorDeposito){
+        conta.depositar(100);
+
+    }
+
+    public void sacar(ContaBancaria conta, double valorSaque){
+        conta.sacar(100);
+    }
+
+
+//    operar com uma conta no banco - depositar, sacar  e transferir
 //    utilizar array de 1000 posicoes
 }
